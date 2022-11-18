@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label "NodeJS@18.8.0"
-    }
+    agent any
     stages {
         stage('Example') {
             steps {
