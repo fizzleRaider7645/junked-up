@@ -5,8 +5,8 @@ pipeline {
         stage('Example') {
             steps {
                 sh '''
-                    npm ci
-                    npm run build
+                    yarn install
+                    yarn build
                 '''
             }
         }
