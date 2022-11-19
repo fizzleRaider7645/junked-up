@@ -4,5 +4,5 @@
     - Docker
     - Typescript
     - Vite / ViteTest
-    - Jenkins
+    - Jenkins (remote)
     
