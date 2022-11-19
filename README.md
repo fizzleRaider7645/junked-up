@@ -4,4 +4,5 @@
     - Docker
     - Typescript
     - Vite / ViteTest
+    - Jenkins
     
