@@ -1,12 +1,13 @@
 pipeline {
-    agent any
-    tools { nodejs "NodeJS@18.8.0" }
+    agent {
+        docker { image 'node:16-alpine' }
+    }
     stages {
         stage('Example') {
             steps {
                 sh '''
-                    npm ci
-                    npm run build
+                    yarn install
+                    yarn build
                 '''
             }
         }
