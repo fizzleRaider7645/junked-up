@@ -1,14 +1,13 @@
 pipeline {
-    agent any
-    tools {
-        nodejs 'NodeJS@19.2.0'
+    agent {
+        docker { image 'node:16.13.1-alpine' }
     }
     stages {
         stage('Example') {
             steps {
                 sh '''
-                    yarn install
-                    yarn build
+                    npm install
+                    npm build
                 '''
             }
         }
